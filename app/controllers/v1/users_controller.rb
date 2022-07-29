@@ -1,8 +1,7 @@
 class V1::UsersController < ApplicationController
 
     def index
-        # users = User.all
-        users = {'name' => 'サンプル', 'old' => 28}
+        users = User.all
         render json: users
     end
 

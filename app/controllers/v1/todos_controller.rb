@@ -3,7 +3,7 @@ class V1::TodosController < ApplicationController
     # 表示テスト用のアクション
     def index
         # todo = Todo.all
-        todo = {'title' => 'サンプル', 'old' => 28}
+        todo = {'title' => 'Yamada', 'old' => 28}
         render json: todo
     end
 
