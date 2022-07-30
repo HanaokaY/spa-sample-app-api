@@ -8,13 +8,14 @@ class V1::TodosController < ApplicationController
     end
 
     def create
-        p todo_params
-        todo = Todo.new(todo_params)
-        if todo.save
-        render json: todo
-        else
-        render json: todo.errors
-        end
+        # p todo_params
+        # todo = Todo.new(todo_params)
+        # if todo.save
+        # render json: todo
+        # else
+        # render json: todo.errors
+        # end
+        p params
     end
 
     def destroy
